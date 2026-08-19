@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Company Announcements{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="p-5 bg-light rounded-3">
+        <h1 class="display-6">Welcome</h1>
+        <p class="lead">Company announcements and updates will appear here.</p>
+        <a class="btn btn-primary" href="{% url 'announcement_list' %}">View Announcements</a>
+    </div>
+</section>
+
+<section>
+    <h2 class="h4">Latest Announcements</h2>
+    <p class="text-muted">Build the announcement display and recent updates sections from the project requirements.</p>
+</section>
+{% endblock %}
