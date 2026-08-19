@@ -41,13 +41,21 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-### 5. Start the development server
+### 5. Create an admin account
+
+```bash
+python manage.py createsuperuser
+```
+
+### 6. Start the development server
 
 ```bash
 python manage.py runserver
 ```
 
 Open `http://127.0.0.1:8000/` in your browser.
+
+The Django admin is available at `http://127.0.0.1:8000/admin/`.
 
 ## Project Structure
 
@@ -66,8 +74,8 @@ AA1/
 - The application uses Django.
 - Bootstrap is available through the base template.
 - The `Announcement` model and Django admin registration provide the initial backend foundation.
-- Public-facing pages and application behaviour are intentionally kept minimal so the remaining project requirements can be implemented from the project document.
-- Do not commit the virtual environment or secret configuration files.
+- Public-facing pages are intentionally kept minimal. The remaining application behaviour and presentation should be implemented from the project requirements.
+- Do not commit the virtual environment, database file, or secret configuration files.
 
 ## Before Submission
 
